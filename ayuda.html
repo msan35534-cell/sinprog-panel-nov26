@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayuda · Oficina de agentes</title>
+<style>
+  body { margin: 0; background: #f6f7fb; color: #1f2937; font-family: system-ui, sans-serif; line-height: 1.5; }
+  nav { background: #2563eb; }
+  nav ul { list-style: none; margin: 0 auto; padding: 0; max-width: 800px; display: flex; flex-wrap: wrap; }
+  nav a { display: block; padding: 12px 16px; color: #fff; text-decoration: none; }
+  nav a:hover { background: #1d4ed8; }
+  main { max-width: 800px; margin: 0 auto; padding: 16px; }
+  h1, h2 { color: #2563eb; }
+  .tarjeta { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+  .aviso { background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+  a { color: #2563eb; }
+  a:hover { color: #1d4ed8; }
+  .boton { display: inline-block; background: #2563eb; color: #fff; padding: 8px 14px; border-radius: 6px; text-decoration: none; margin: 4px 8px 4px 0; }
+  .boton:hover { background: #1d4ed8; color: #fff; }
+</style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="inicio.html">Inicio</a></li>
+    <li><a href="vigia.html">Vigía</a></li>
+    <li><a href="ayuda.html">Ayuda</a></li>
+    <li><a href="constructor.html">Constructor</a></li>
+    <li><a href="equipo-nocturno.html">Equipo nocturno</a></li>
+  </ul>
+</nav>
+<main>
+  <p><a href="inicio.html">Volver al inicio</a></p>
+  <h1>Ayuda: un agente no me avisa</h1>
+  <p>Si un agente no te ha avisado, sigue estos pasos. Empieza por el primero.</p>
+
+  <div class="tarjeta">
+    <h2>1. ¿Se ejecutó la tarea?</h2>
+    <p>Abre la pestaña <strong>Actions</strong> en GitHub. Mira si hay una ejecución de hoy para ese agente.</p>
+  </div>
+
+  <div class="tarjeta">
+    <h2>2. ¿Falló?</h2>
+    <p>Si la ejecución sale con una cruz roja, falló. Ábrela para ver qué pasó.</p>
+  </div>
+
+  <div class="tarjeta">
+    <h2>3. ¿Está desactivada?</h2>
+    <p>Una tarea pausada no se ejecuta. Mira en Actions si el agente aparece como desactivado. Si lo está, usa «Enable workflow» para volver a activarlo.</p>
+  </div>
+
+  <div class="tarjeta">
+    <h2>4. Revisa los secretos</h2>
+    <p>Los secretos se revisan en <strong>Settings</strong> del repositorio. Mira que existan.</p>
+  </div>
+  <div class="aviso">
+    <strong>Importante:</strong> nunca copies el valor de un secreto. Ni en el chat, ni en un archivo, ni en una página.
+  </div>
+
+  <h2>Enlaces</h2>
+  <p>
+    <a class="boton" href="https://github.com/msan35534-cell/oficina-sinprog-nov26/actions" target="_blank" rel="noopener">Todas las tareas</a>
+    <a class="boton" href="https://github.com/msan35534-cell/oficina-sinprog-nov26/actions/workflows/vigia.yml" target="_blank" rel="noopener">Vigía en Actions</a>
+    <a class="boton" href="https://github.com/msan35534-cell/oficina-sinprog-nov26/actions/workflows/constructor.yml" target="_blank" rel="noopener">Constructor en Actions</a>
+  </p>
+  <p><a href="inicio.html">Volver al inicio</a></p>
+</main>
+</body>
+</html>
